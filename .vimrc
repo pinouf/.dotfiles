@@ -20,21 +20,21 @@
     set encoding=UTF-8                      " Display UTF-8
 
 " Color
-	syntax enable
-	set background=dark                     " dark background is better!
-	let php_sql_query = 1                   " SQL queries
-	let php_htmlInStrings = 1               " HTML
-	if has('gui_running')
-		set guifont=Monospace\ 8
-		let g:solarized_style="light"
-		let g:solarized_contrast="high"
-		colorscheme solarized
-	else
-		colorscheme delek
-	endif
+    syntax enable
+    set background=dark                     " dark background is better!
+    let php_sql_query = 1                   " SQL queries
+    let php_htmlInStrings = 1               " HTML
+    if has('gui_running')
+        set nu
+        set guifont=Monospace\ 8
+        let g:solarized_style="light"
+        let g:solarized_contrast="high"
+            colorscheme solarized
+        else
+            colorscheme delek
+        endif
 
 " UI
-    set cursorline                          " Highlight the current line
     set scrolloff=8                         " Keep x line for scope while scrolling
     set sidescrolloff=8                     " same same
     set showmatch                           " Show matching bracket
@@ -45,7 +45,6 @@
     set wildmode=list:longest               " Complete files like a shell.
 
 " Statusline
-    set number                              " Show line numbers in gutter
     set ruler                               " Always show current position along the bottom
     set showcmd                             " Show the command being typed
 
