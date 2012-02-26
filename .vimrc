@@ -33,6 +33,55 @@
 		colorscheme delek
 	endif
 
+" UI
+    set cursorline                          " Highlight the current line
+    set scrolloff=8                         " Keep x line for scope while scrolling
+    set sidescrolloff=8                     " same same
+    set showmatch                           " Show matching bracket
+    set mouse=a                             " Activate mouse
+
+" Completion
+    set wildmenu
+    set wildmode=list:longest               " Complete files like a shell.
+
+" Statusline
+    set number                              " Show line numbers in gutter
+    set ruler                               " Always show current position along the bottom
+    set showcmd                             " Show the command being typed
+
+    set laststatus=2
+
+    set statusline+=%{SyntasticStatuslineFlag()}
+    set statusline=%<%f\                    " Filename
+    set statusline+=%w%h%m%r                " Options
+    set statusline+=\ [%{&ff}/%Y]           " Show filetype in statusline
+    set statusline+=\ [%{getcwd()}]          " current dir
+    set statusline+=%=%-14.(%l,%c%V%)\ %p%%  " Right aligned file nav info
+
+" Editor
+    set bs=indent,eol,start                 " Backspace works everywhere
+    set ruler                               " Show current cursor position
+    set history=1000                        " increase history size
+    set undolevels=1000                     " increase history size
+    set visualbell                          " No beeping.
+    set list
+    set listchars=trail:¤,tab:>-            " Show blank spaces and tabs at the end of a line
+    set nobackup                            " No backup file!
+    set noswapfile                          " No more swap file!
+
+" Search
+    " set incsearch                           " Highlight matches as you type.
+    set hlsearch                            " Highlight matches.
+    " set ignorecase                          " Case-insensitive searching.
+    " set smartcase                           " But case-sensitive if expression contains a capital letter.
+
+" Indentation
+    set autoindent                          " Automatic indentation
+    set softtabstop=4                       " tab = 4 space
+    set shiftwidth=4
+    set expandtab                           " no more tabs, only spaces!
+    set shiftround                          " when at 3 spaces, and I hit > ... go to 4, not 7
+
 " Keymap
 
     " Changing leader
