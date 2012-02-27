@@ -97,3 +97,13 @@
     " GO to the definition 
     noremap <leader>l : g]<CR>
     
+    "copy
+    vmap <F7> "+ygv"zy`>
+    "paste (Shift-F7 to paste after normal cursor, Ctrl-F7 to paste over visual selection)
+    nmap <F7> "zgP
+    nmap <S-F7> "zgp
+    imap <F7> <C-r><C-o>z
+    vmap <C-F7> "zp`]
+    cmap <F7> <C-r><C-o>z
+    "copy register
+    autocmd FocusGained * let @z=@+
