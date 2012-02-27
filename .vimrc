@@ -92,4 +92,8 @@
     nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
     " Switch to paste mode to copy a large alount of text
-    set pastetoggle=<4>
+    set pastetoggle=<F4>
+
+    " GO to the definition 
+    noremap <leader>l : g]<CR>
+    
