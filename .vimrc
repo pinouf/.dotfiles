@@ -109,3 +109,13 @@
 
 " Command-T
     set wildignore+=app/cache/**
+
+" MiniBufXplorer settings
+    let g:miniBufExplMaxSize=3 " set max size to 3 lines
+    let g:miniBufExplMapWindowNavVim= 1 " Navigate trough buffers with Control + [hjkl]
+    let g:miniBufExplMapWindowNavArrows=1 " Navigate trough buffers with Control + Arrow Keys
+    let g:miniBufExplMapCTabSwitchBufs=1 " Navigate trough buffers with <C-TAB> and <C-S-TAB>
+    let g:miniBufExplModSelTarget=1 " Hide others explorers out of MBE
+    let g:miniBufExplSplitBelow=0 " Put new window above current or on the left for vertical split
+    " Minibufexpl with ,q is better than :Bclose :)
+    noremap <leader>q :Bclose<CR>
