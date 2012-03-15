@@ -25,15 +25,15 @@
     let php_sql_query = 1                   " SQL queries
     let php_htmlInStrings = 1               " HTML
     if has('gui_running')
-        " autocmd vimenter * NERDTree
+        autocmd vimenter * NERDTree
         set nu
         set guifont=Monospace\ 8
         let g:solarized_style="light"
         let g:solarized_contrast="high"
-            colorscheme solarized
-        else
-            colorscheme delek
-        endif
+        colorscheme solarized
+    else
+        colorscheme delek
+    endif
 
 " UI
     set scrolloff=8                         " Keep x line for scope while scrolling
@@ -106,5 +106,6 @@
     imap <F7> <C-r><C-o>z
     vmap <C-F7> "zp`]
     cmap <F7> <C-r><C-o>z
-    "copy register
-    autocmd FocusGained * let @z=@+
+
+" Command-T
+    set wildignore+=app/cache/**

@@ -15,6 +15,7 @@ alias ll='ls -lhA'
 alias mysql_stop='launchctl unload Library/LaunchAgents/homebrew.mxcl.mysql.plist' 
 alias mysql_start='launchctl load Library/LaunchAgents/homebrew.mxcl.mysql.plist' 
 alias memcached_start='memcached -d -m 2048 -l 127.0.0.1 -p 11211'
+alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
