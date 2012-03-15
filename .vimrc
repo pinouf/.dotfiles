@@ -119,3 +119,8 @@
     let g:miniBufExplSplitBelow=0 " Put new window above current or on the left for vertical split
     " Minibufexpl with ,q is better than :Bclose :)
     noremap <leader>q :Bclose<CR>
+
+" NERDTree
+    let g:NERDTreeWinPos = "right"
+    nnoremap <F2> :NERDTreeToggle<CR>
+    nnoremap <F3> :TlistToggle<CR>
