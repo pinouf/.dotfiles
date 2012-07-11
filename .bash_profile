@@ -36,4 +36,4 @@ export PATH=/usr/local/Cellar/php/5.3.8/bin:$PATH
 export PATH=/usr/local/sbin/:$PATH
 
 #change la version de git pour la surcharger avec celle de homebrew
-export PATH=/usr/local/Cellar/git/1.7.9.2/bin:$PATH
+export PATH=/usr/local/Cellar/git/1.7.11.1/bin:$PATH
