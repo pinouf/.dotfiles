@@ -110,6 +110,9 @@
 " Command-T
     set wildignore+=app/cache/**
 
+" CTAGS
+    set tags+=$HOME/.vim/tags/python.ctags
+
 " MiniBufXplorer settings
     let g:miniBufExplMaxSize=3 " set max size to 3 lines
     let g:miniBufExplMapWindowNavVim= 1 " Navigate trough buffers with Control + [hjkl]

@@ -16,6 +16,7 @@ alias mysql_stop='launchctl unload Library/LaunchAgents/homebrew.mxcl.mysql.plis
 alias mysql_start='launchctl load Library/LaunchAgents/homebrew.mxcl.mysql.plist' 
 alias memcached_start='memcached -d -m 2048 -l 127.0.0.1 -p 11211'
 alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
+alias memcached_run='/usr/local/bin/memcached'
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
@@ -30,10 +31,13 @@ esac
 PS1="[\t] \[\e[01;32m\]\u@\h\[\e[00m\]:\[\e[01;34m\]\w\[\e[00m\]\$ "
 
 #change le php de notre CLI -) pour utiliser celui de homebrew en ajouant le chemin ...
-export PATH=/usr/local/Cellar/php/5.3.8/bin:$PATH
+export PATH=/usr/local/Cellar/php53/5.3.17/bin:$PATH
+
+#change le php de notre CLI pour utiliser de homebrew PHP 5.4
+#export PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
 
 #ajout du chemin sbin dans le $PATH ( pour apache de homebrew )
 export PATH=/usr/local/sbin/:$PATH
 
 #change la version de git pour la surcharger avec celle de homebrew
-export PATH=/usr/local/Cellar/git/1.7.11.1/bin:$PATH
+export PATH=/usr/local/Cellar/git/1.7.12.1/bin:$PATH
