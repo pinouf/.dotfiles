@@ -4,6 +4,7 @@ My dot-files
 Installation
 -----
 
+--
 
 
 	git clone git@github.com:pinouf/.dotfiles.git
