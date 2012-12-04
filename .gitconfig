@@ -1,28 +1,29 @@
 [user]
-	name = Jean-Marc Chieng
-	email = chieng_jeanmarc@yahoo.fr
+        name = Jean-Marc Chieng
+        email = chieng_jeanmarc@yahoo.fr
 [core]
-	autocrlf = input
-	editor = vim
+        autocrlf = input
+        editor = vim
 [http]
-	sslVerify = false
-	postBuffer = 524288000
+        sslVerify = false
+        postBuffer = 524288000
 [alias]
-	ci   = commit
-	di   = diff
-	sdi  = diff --staged
-	sdiff = diff --staged
-	st   = status
-	sta  = stash
-	br   = branch
-	co   = checkout
-	cat  = cat-file -p
-	lg   = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset%s %Cgreen(%an %cr)%Creset' --abbrev-commit --date=relative
+        ci   = commit
+        di   = diff
+        sdi  = diff --staged
+        sdiff = diff --staged
+        st   = status
+        sta  = stash
+        br   = branch
+        co   = checkout
+        cat  = cat-file -p
+        lg   = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset%s %Cgreen(%an %cr)%Creset' --abbrev-commit --date=relative
+        lgc  = log --pretty=oneline --abbrev-commit --graph --decorate
+        undo = reset --soft HEAD^
 [color]
-    	branch = auto
-    	diff = auto
-    	interactive = auto
-    	status = auto
-[github]
-	token =  XXXX 
-	user = pinouf
+        branch = auto
+        diff = auto
+        interactive = auto
+        status = auto
+
+
