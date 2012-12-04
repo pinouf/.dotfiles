@@ -27,8 +27,12 @@ xterm*|rxvt*)
     ;;
 esac
 
+function parse_git_branch_and_add_brackets {
+	git branch --color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\ \[\1\]/'
+}
+
 # set a fancy prompt (non-color, unless we know we "want" color)
-PS1="[\t] \[\e[01;32m\]\u@\h\[\e[00m\]:\[\e[01;34m\]\w\[\e[00m\]\$ "
+PS1="[\t] \[\e[01;32m\]\u@\h\[\e[00m\]:\[\e[01;34m\]\w\[\e[00m\]\$ (parse_git_branch_and_add_brackets) \[\033[0m\]\$ "
 
 #change le php de notre CLI -) pour utiliser celui de homebrew en ajouant le chemin ...
 export PATH=/usr/local/Cellar/php53/5.3.17/bin:$PATH
